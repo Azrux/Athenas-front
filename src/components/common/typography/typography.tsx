@@ -19,7 +19,7 @@ const Typography: FC<TypographyProps> = ({
 			case 'error':
 				return 'font-light text-xs text-danger';
 			case 'caption':
-				return 'text-xs text-gray-400';
+				return 'text-xs text-default-400';
 			default:
 				return 'text-sm';
 		}
