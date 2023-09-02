@@ -1,15 +1,156 @@
+import { NavBar } from '@common-components/navbar';
 import { FC } from 'react';
-import { DevCard } from './dev-card';
 
 const Test: FC = () => {
 	return (
 		<>
-			<DevCard
-				profileImg={'https://avatars.githubusercontent.com/u/69043210?v=4'}
-				name={'Juan'}
-				location={'Colombia'}
-				about={'I am a developer'}
-			/>
+			<NavBar />
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Id itaque, aut
+			quaerat praesentium dolorem rerum recusandae? Pariatur mollitia aperiam,
+			rerum eveniet exercitationem aspernatur minima praesentium consequatur
+			dicta, consectetur beatae quia. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique. Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Tempore tempora atque laboriosam, et odio
+			provident fuga consequuntur ratione alias vitae quisquam earum rerum neque
+			rem eligendi! Voluptatibus consequatur ducimus similique. Lorem ipsum
+			dolor sit amet consectetur adipisicing elit. Tempore tempora atque
+			laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+			itaque, aut quaerat praesentium dolorem rerum recusandae? Pariatur
+			mollitia aperiam, rerum eveniet exercitationem aspernatur minima
+			praesentium consequatur dicta, consectetur beatae quia. Lorem ipsum dolor
+			sit amet consectetur adipisicing elit. Tempore tempora atque laboriosam,
+			et odio provident fuga consequuntur ratione alias vitae quisquam earum
+			rerum neque rem eligendi! Voluptatibus consequatur ducimus similique.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora
+			atque laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Id itaque, aut quaerat praesentium dolorem rerum
+			recusandae? Pariatur mollitia aperiam, rerum eveniet exercitationem
+			aspernatur minima praesentium consequatur dicta, consectetur beatae quia.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora
+			atque laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique. Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Id itaque, aut quaerat praesentium dolorem
+			rerum recusandae? Pariatur mollitia aperiam, rerum eveniet exercitationem
+			aspernatur minima praesentium consequatur dicta, consectetur beatae quia.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora
+			atque laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique. Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Id itaque, aut quaerat praesentium dolorem
+			rerum recusandae? Pariatur mollitia aperiam, rerum eveniet exercitationem
+			aspernatur minima praesentium consequatur dicta, consectetur beatae quia.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora
+			atque laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique. Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Id itaque, aut quaerat praesentium dolorem
+			rerum recusandae? Pariatur mollitia aperiam, rerum eveniet exercitationem
+			aspernatur minima praesentium consequatur dicta, consectetur beatae quia.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora
+			atque laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique. Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Id itaque, aut quaerat praesentium dolorem
+			rerum recusandae? Pariatur mollitia aperiam, rerum eveniet exercitationem
+			aspernatur minima praesentium consequatur dicta, consectetur beatae quia.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora
+			atque laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique. Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Id itaque, aut quaerat praesentium dolorem
+			rerum recusandae? Pariatur mollitia aperiam, rerum eveniet exercitationem
+			aspernatur minima praesentium consequatur dicta, consectetur beatae quia.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora
+			atque laboriosam, et odio provident fuga consequuntur ratione alias vitae
+			quisquam earum rerum neque rem eligendi! Voluptatibus consequatur ducimus
+			similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique.
+			<br />
+			Tempore tempora atque laboriosam, et odio provident fuga consequuntur
+			ratione alias vitae quisquam earum rerum neque rem eligendi! Voluptatibus
+			consequatur ducimus similique. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
+			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
+			Voluptatibus consequatur ducimus similique.
 		</>
 	);
 };
