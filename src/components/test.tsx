@@ -1,15 +1,15 @@
 import { FC } from 'react';
-import { DevCard } from './dev-card';
+import Typography from '@common-components/typography/typography';
 
 const Test: FC = () => {
 	return (
 		<>
-			<DevCard
-				profileImg={'https://avatars.githubusercontent.com/u/69043210?v=4'}
-				name={'Juan'}
-				location={'Colombia'}
-				about={'I am a developer'}
-			/>
+			<Typography type='title'>This is a title</Typography>
+			<Typography type='subtitle'>This is a subtitle</Typography>
+			<Typography>This is a paragraph</Typography>
+			<Typography type='quote'>This is a quote</Typography>
+			<Typography type='caption'>This is a caption</Typography>
+			<Typography type='error'>This is an error</Typography>
 		</>
 	);
 };
