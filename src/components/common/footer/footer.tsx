@@ -14,7 +14,7 @@ const Footer: FC = () => {
 			<nav>
 				<div className='flex space-x-4 pt-2 pb-4 sm:py-0'>
 					<Link to='/home'>Home</Link>
-					<Link to='/about'>About</Link>
+					<Link to='/about'>Sobre Nosotros</Link>
 					<Link to='/tienda'>Tienda</Link>
 				</div>
 			</nav>
