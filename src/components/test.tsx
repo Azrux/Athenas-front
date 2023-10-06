@@ -1,3 +1,4 @@
+import { Footer } from '@common-components/footer';
 import { NavBar } from '@common-components/navbar';
 import { FC } from 'react';
 
@@ -151,6 +152,7 @@ const Test: FC = () => {
 			adipisicing elit. Tempore tempora atque laboriosam, et odio provident fuga
 			consequuntur ratione alias vitae quisquam earum rerum neque rem eligendi!
 			Voluptatibus consequatur ducimus similique.
+			<Footer />
 		</>
 	);
 };
