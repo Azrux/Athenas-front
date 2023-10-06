@@ -10,7 +10,7 @@ import { type FC, useState } from 'react';
 import { Typography } from '@common-components/typography';
 import { HeartIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import { ProductCardProps } from './types';
+import { type ProductCardProps } from './types';
 
 const ProductCard: FC<ProductCardProps> = ({ favorite, title, description, price, image }) => {
     const [isFavorite, setIsFavorite] = useState(favorite)
@@ -61,6 +61,7 @@ const ProductCard: FC<ProductCardProps> = ({ favorite, title, description, price
 
 			<CardFooter className='flex justify-between'>
 				<Typography className='text-center font-semibold'>{price}</Typography>
+                {/* TODO: Agregar lógica para el carrito */}
                 <ShoppingCartIcon
                     className='absolute bottom-3 right-3 w-6 h-6 text-green-500 hover:cursor-pointer transition-all hover:w-7 hover:h-7'
                     type="button"
