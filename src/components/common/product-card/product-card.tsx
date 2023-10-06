@@ -12,7 +12,7 @@ import { HeartIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import { type ProductCardProps } from './types';
 
-const ProductCard: FC<ProductCardProps> = ({ favorite, title, description, price, image }) => {
+const ProductCard: FC<ProductCardProps> = ({ favorite, title, description, price, image, ...props }) => {
     const [isFavorite, setIsFavorite] = useState(favorite)
     const [isHovered, setIsHovered] = useState(false);
 
@@ -24,6 +24,7 @@ const ProductCard: FC<ProductCardProps> = ({ favorite, title, description, price
 			isHoverable
             isFooterBlurred
             radius='sm'
+            {...props}
 		>
 			<CardHeader className='block'>
                 <Typography type="title">{title}</Typography>
