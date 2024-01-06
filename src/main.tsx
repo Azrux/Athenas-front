@@ -4,14 +4,15 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './main.css';
 import React from 'react';
+import Layout from '@common-components/layout/layout';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <NextUIProvider>
-        <main className="light text-foreground bg-background">
+        <Layout className="light text-foreground bg-background h-full w-full">
           <App />
-        </main>
+        </Layout>
       </NextUIProvider>
     </BrowserRouter>
   </React.StrictMode>,
