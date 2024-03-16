@@ -6,7 +6,11 @@ import './main.css';
 import React from 'react';
 import Layout from '@common-components/layout/layout';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const root = document.getElementById('root')
+
+if (!root) throw new Error('Root element not found')
+
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <BrowserRouter>
       <NextUIProvider>

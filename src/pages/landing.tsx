@@ -1,9 +1,7 @@
 import { Button } from '@nextui-org/react';
-import { type FC } from 'react';
+import type { FC } from 'react';
 
-interface LandingProps {}
-
-const Landing: FC<LandingProps> = () => {
+const Landing: FC = () => {
 	return (
 		<div>
 			<Button>holi</Button>

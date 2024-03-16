@@ -1,5 +1,5 @@
 import Carousel from '@common-components/carousel/carousel';
-import { FC } from 'react';
+import type { FC } from 'react';
 
 const Test: FC = () => {
 	const images = [

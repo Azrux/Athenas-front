@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router';
 import Landing from '@pages/landing';
-import { type FC } from 'react';
+import type { FC } from 'react';
 import Test from '@components/test';
 
 const App: FC = () => {
