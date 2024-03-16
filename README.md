@@ -1,27 +1,55 @@
-# React + TypeScript + Vite
+<h1>Athenas Club - E-commerce Project</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>This project is an e-commerce application built with Reac.</p>
 
-Currently, two official plugins are available:
+<p>The technologies used in this project include:</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<ul>
+  <li>Vite</li>
+  <li>React</li>
+  <li>Typescript</li>
+  <li>NextUI</li>
+  <li>Tailwind</li>
+</ul>
 
-## Expanding the ESLint configuration
+<h2>Installation</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<p>To install the dependencies, run the following command:</p>
 
-- Configure the top-level `parserOptions` property like this:
+<pre><code>npm install
+</code></pre>
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+<p>or</p>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<pre><code>npm i
+</code></pre>
+
+<h2>Getting Started</h2>
+
+<p>To start the project, use the following command:</p>
+
+<pre><code>npm run dev
+</code></pre>
+
+<h2>Linter</h2>
+
+<p>To lint a file, use the following command:</p>
+
+<pre><code>npx @biomejs/biome lint &lt;file&gt;
+</code></pre>
+
+<h2>Code Formatting</h2>
+
+<p>To format files using the linter, run:</p>
+
+<pre><code>npx @biomejs/biome format &lt;files&gt; --write
+</code></pre>
+
+<h2>Plugin Recommendation</h2>
+
+<p>For an enhanced development experience, it's recommended to install the plugin for Biome.</p>
+
+<pre><code>npm install @biomejs/plugin
+</code></pre>
+
+<p>Feel free to reach out if you have any questions or encounter any issues. Happy coding!</p>
