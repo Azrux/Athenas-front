@@ -1,4 +1,4 @@
-import { CarouselProps as DaisyCarouselProps } from 'react-daisyui';
+import type { CarouselProps as DaisyCarouselProps } from 'react-daisyui';
 
 export interface CarouselProps extends Partial<DaisyCarouselProps> {
 	images: string[];

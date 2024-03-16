@@ -1,4 +1,4 @@
-import { type FC } from 'react';
+import type { FC } from 'react';
 import { Footer } from '@common-components/footer';
 import { NavBar } from '@common-components/navbar';
 import type { LayoutProps } from './types';

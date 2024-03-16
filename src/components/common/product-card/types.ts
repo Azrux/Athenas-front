@@ -1,4 +1,4 @@
-import { type CardProps } from '@nextui-org/react';
+import type { CardProps } from '@nextui-org/react';
 
 export interface ProductCardProps extends CardProps {
 	title: string;

@@ -1,4 +1,4 @@
-import { type FC } from 'react';
+import type { FC } from 'react';
 import type { CarouselProps } from './types';
 import { Carousel as DaisyCarousel } from 'react-daisyui';
 
@@ -19,7 +19,7 @@ const Carousel: FC<CarouselProps> = ({
 					<DaisyCarousel.Item
 						src={image}
 						alt={`carousel-image-${index}`}
-						key={index}
+						key={`carousel-image-${index+1}`}
 					/>
 				))}
 			</DaisyCarousel>

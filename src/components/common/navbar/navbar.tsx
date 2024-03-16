@@ -10,7 +10,7 @@ import {
 	NavbarContent,
 	NavbarItem,
 } from '@nextui-org/react';
-import { type FC } from 'react';
+import type { FC } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import AthenasLogo from '@assets/athenas_logo.png';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';

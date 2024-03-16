@@ -10,7 +10,7 @@ import { type FC, useState } from 'react';
 import { Typography } from '@common-components/typography';
 import { HeartIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import { type ProductCardProps } from './types';
+import type { ProductCardProps } from './types';
 
 const ProductCard: FC<ProductCardProps> = ({ favorite, title, description, price, image, ...props }) => {
     const [isFavorite, setIsFavorite] = useState(favorite)
