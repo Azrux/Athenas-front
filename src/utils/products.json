@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"name": "Camiseta de fútbol",
+		"description": "Camiseta oficial del Athenas Club",
+		"price": "$15000",
+		"image": "https://www.thefutbolstore.com.ar/uploads/v2/product/hi/202005_800_A.jpg",
+		"category": "Ropa",
+		"isPopular": true,
+		"isNew": false
+	},
+	{
+		"id": 2,
+		"name": "Pelota de basket",
+		"description": "",
+		"price": "$20000",
+		"image": "https://www.canteprijuguetes.com.ar/nueva/wp-content/uploads/2021/02/images-74.jpg",
+		"category": "Deportes",
+		"isPopular": false,
+		"isNew": true
+	},
+	{
+		"id": 3,
+		"name": "Bufanda",
+		"description": "Bufanda oficial de Athenas Club",
+		"price": "$7000",
+		"image": "https://www.basicosfox.com/datos/uploads/mod_catalogo/22541/9221-violeta-9-5af62046d3b0e.jpg",
+		"category": "Ropa",
+		"isPopular": true,
+		"isNew": false
+	},
+	{
+		"id": 4,
+		"name": "Botella de agua",
+		"description": "Botella de agua reutilizable de Athenas Club",
+		"price": "$5000",
+		"image": "https://promofabrica.com.ar/wp-content/uploads/2020/08/c.jpg",
+		"category": "Accesorios",
+		"isPopular": false,
+		"isNew": true
+	},
+	{
+		"id": 5,
+		"name": "Gorra del club",
+		"description": "Gorra con el logo del Athenas Club",
+		"price": "$4000",
+		"image": "https://http2.mlstatic.com/D_NQ_NP_761342-MLA52002690385_102022-O.webp",
+		"category": "Ropa",
+		"isPopular": true,
+		"isNew": false
+	}
+]
