@@ -13,7 +13,7 @@ const AboutAthenas = () => {
 
 			<CollapsibleSection
 				id="testimonials"
-				title="Lo Que Dicen Nuestros Miembros"
+				title="Lo que dicen nuestros miembros"
 				className="bg-gray-100"
 			>
 				{testimonials.map(({ title, description }) => (
@@ -21,7 +21,7 @@ const AboutAthenas = () => {
 				))}
 			</CollapsibleSection>
 
-			<CollapsibleSection id="products" title="Nuestros Productos">
+			<CollapsibleSection id="products" title="Nuestros productos">
 				{productReliability.map(({ title, description }) => (
 					<InfoCard key={title} title={title} description={description} />
 				))}
