@@ -1,5 +1,6 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
+// biome-ignore lint/suspicious/noShadowRestrictedNames: This is a false positive
 const Map = () => {
 	return (
 		<MapContainer

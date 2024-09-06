@@ -51,7 +51,6 @@ const LandingPage = () => {
 					<p>Dirección: Calle Falsa 123, Buenos Aires, Argentina</p>
 					<p>Teléfono: 11 4321 1234</p>
 					<p>Email: contacto@athenasclub.com</p>
-					{/* TODO: Agregar mapa con ubicación falsa*/}
 				</div>
 				<Map />
 			</section>
