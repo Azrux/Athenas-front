@@ -5,7 +5,9 @@ const SignUpForm = () => {
 	return (
 		<section id="register" className="py-12 px-2 bg-gray-100">
 			<div className="container mx-auto text-center">
-				<h2 className="text-3xl font-bold mb-6">Únete a Nuestro Club</h2>
+				<h2 className="text-3xl font-bold mb-6">
+					Únete a Nuestro Club
+				</h2>
 				<form className="max-w-md mx-auto">
 					<Input
 						type="text"

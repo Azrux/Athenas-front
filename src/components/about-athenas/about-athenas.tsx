@@ -7,7 +7,11 @@ const AboutAthenas = () => {
 		<>
 			<CollapsibleSection id="benefits" title="¿Por qué elegirnos?">
 				{benefits.map(({ title, description }) => (
-					<InfoCard key={title} title={title} description={description} />
+					<InfoCard
+						key={title}
+						title={title}
+						description={description}
+					/>
 				))}
 			</CollapsibleSection>
 
@@ -17,13 +21,21 @@ const AboutAthenas = () => {
 				className="bg-gray-100"
 			>
 				{testimonials.map(({ title, description }) => (
-					<InfoCard key={title} title={title} description={description} />
+					<InfoCard
+						key={title}
+						title={title}
+						description={description}
+					/>
 				))}
 			</CollapsibleSection>
 
 			<CollapsibleSection id="products" title="Nuestros productos">
 				{productReliability.map(({ title, description }) => (
-					<InfoCard key={title} title={title} description={description} />
+					<InfoCard
+						key={title}
+						title={title}
+						description={description}
+					/>
 				))}
 			</CollapsibleSection>
 		</>

@@ -17,7 +17,9 @@ const LandingPage = () => {
 			>
 				<div className="absolute inset-0 bg-black opacity-50" />
 				<div className="relative container mx-auto text-center text-white p-8">
-					<h1 className="text-4xl font-bold mb-4">Unite al Club Athenas</h1>
+					<h1 className="text-4xl font-bold mb-4">
+						Unite al Club Athenas
+					</h1>
 					<p className="text-xl mb-6">
 						Descubrí lo mejor del deporte y la comunidad.
 					</p>
@@ -28,7 +30,9 @@ const LandingPage = () => {
 								className="shadow-md bg-[#471883] hover:bg-[#471883]"
 								size="lg"
 							>
-								<Link to="/home">Hacé click para saber más</Link>
+								<Link to="/home">
+									Hacé click para saber más
+								</Link>
 							</Button>
 						</Typography>
 					</div>
