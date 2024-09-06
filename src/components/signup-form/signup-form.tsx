@@ -1,31 +1,41 @@
+import { Button, Input } from "@nextui-org/react";
+
 const SignUpForm = () => {
 	// TODO: Add functionality
 	return (
-		<section id="register" className="py-12 bg-gray-100">
+		<section id="register" className="py-12 px-2 bg-gray-100">
 			<div className="container mx-auto text-center">
 				<h2 className="text-3xl font-bold mb-6">Únete a Nuestro Club</h2>
 				<form className="max-w-md mx-auto">
-					<input
+					<Input
 						type="text"
-						placeholder="Nombre"
-						className="block w-full p-3 mb-4 border border-gray-300 rounded"
+						label="Nombre"
+						placeholder="Ingresá tu nombre"
+						className="block w-full mb-4"
+						variant="faded"
+						color="secondary"
 					/>
-					<input
-						type="email"
-						placeholder="Correo Electrónico"
-						className="block w-full p-3 mb-4 border border-gray-300 rounded"
-					/>
-					<input
+					<div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+						<Input
+							type="email"
+							label="Email"
+							placeholder="Ingresá tu email"
+							className="block w-full mb-4"
+							variant="faded"
+							color="secondary"
+						/>
+					</div>
+					<Input
 						type="tel"
-						placeholder="Teléfono"
-						className="block w-full p-3 mb-4 border border-gray-300 rounded"
+						label="Teléfono"
+						placeholder="Ingresá tu teléfono"
+						className="block w-full mb-4"
+						variant="faded"
+						color="secondary"
 					/>
-					<button
-						type="submit"
-						className="bg-yellow-500 text-black px-6 py-3 rounded"
-					>
+					<Button color="secondary" className="shadow-md" size="lg">
 						Regístrate Ahora
-					</button>
+					</Button>
 				</form>
 			</div>
 		</section>

@@ -10,6 +10,7 @@ const CollapsibleSection: FC<CollapsibleSectionProps> = ({
 	id,
 	title,
 	children,
+	className,
 }) => {
 	const [isVisible, setIsVisible] = useState(false);
 
@@ -27,7 +28,7 @@ const CollapsibleSection: FC<CollapsibleSectionProps> = ({
 	};
 
 	return (
-		<section id={id} className="py-6">
+		<section id={id} className={`${className} py-6`}>
 			<div className="container mx-auto text-center">
 				<h2
 					className="text-3xl font-bold mb-6 cursor-pointer flex items-center justify-center"
