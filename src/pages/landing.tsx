@@ -6,6 +6,7 @@ import { AboutAthenas } from "@components/about-athenas";
 import { SignUpForm } from "@components/signup-form";
 // biome-ignore lint/suspicious/noShadowRestrictedNames: This is a false positive
 import { Map } from "@components/map";
+import { EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const LandingPage = () => {
 	return (
@@ -50,11 +51,20 @@ const LandingPage = () => {
 				id="contact"
 				className="py-6 flex flex-col md:flex-row justify-center items-center"
 			>
-				<div className="text-center pb-6 md:pr-6 md:pb-0">
+				<div className="pb-6 md:pr-6 md:pb-0">
 					<h2 className="text-3xl font-bold mb-6">Contactanos</h2>
-					<p>Dirección: Calle Falsa 123, Buenos Aires, Argentina</p>
-					<p>Teléfono: 11 4321 1234</p>
-					<p>Email: contacto@athenasclub.com</p>
+					<p className="flex items-center gap-2">
+						<MapIcon className="h-5 w-5 text-slate-500" /> Calle
+						Falsa 123, Buenos Aires, Argentina
+					</p>
+					<p className="flex items-center gap-2">
+						<PhoneIcon className="h-5 w-5 text-slate-500" />
+						11 4321 1234
+					</p>
+					<p className="flex items-center gap-2">
+						<EnvelopeIcon className="h-5 w-5 text-slate-500" />
+						contacto@athenasclub.com
+					</p>
 				</div>
 				<Map />
 			</section>

@@ -29,16 +29,16 @@ const CollapsibleSection: FC<CollapsibleSectionProps> = ({
 
 	return (
 		<section id={id} className={`${className} py-6`}>
-			<div className="container mx-auto text-center">
+			<div className="mx-auto text-center">
 				<h2
-					className="text-3xl font-bold mb-6 cursor-pointer flex items-center justify-center"
+					className="md:mb-6 cursor-pointer items-center justify-center"
 					onKeyDown={handleKeyDown}
 					onClick={toggleVisibility}
 					aria-expanded={isVisible}
 					aria-controls={`${id}-content`}
 				>
 					<Button
-						className="text-2xl font-semibold ml-3 bg-transparent"
+						className="w-full h-full flex flex-col md:flex-row text-wrap text-2xl font-semibold ml-3 bg-transparent"
 						onClick={toggleVisibility}
 						onKeyDown={handleKeyDown}
 						disableRipple={true}
