@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+
+.title {
+  @apply text-2xl font-semibold;
+}
+
+.subtitle {
+  @apply text-lg font-semibold;
+}
+
+.paragraph {
+  @apply text-sm text-justify;
+}
+
+.quote {
+  @apply font-light text-sm italic;
+}
+
+.error {
+  @apply font-light text-xs text-danger;
+}
+
+.caption {
+  @apply text-xs text-default-400;
+}
