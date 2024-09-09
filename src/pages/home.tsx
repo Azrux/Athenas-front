@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="w-full pb-3">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-secondary mb-4">
+        <h1 className="text-4xl font-bold text-secondary my-4">
           ¡Bienvenido a Athenas Club!
         </h1>
         <p className="text-lg text-gray-700 mb-6">
