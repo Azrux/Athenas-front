@@ -1,4 +1,10 @@
-import historyPhoto from "@assets/images.jpeg";
+import athenasLogo from "@assets/athenas_logo.png";
+import campPhoto from "@assets/camp.jpg";
+import padelCourt from "@assets/canchapadel.jpg";
+import historyPhoto from "@assets/fundacion2.jpeg";
+import partyHall from "@assets/partyHall.jpg";
+import healthyPhoto from "@assets/saludable.jpg";
+import yogaPhoto from "@assets/yoga.jpg";
 
 import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 
@@ -48,8 +54,8 @@ export default function AboutUs() {
               personas y mejorar la calidad de vida de nuestros miembros.
             </p>
             <Image
-              src={historyPhoto}
-              alt="Miembros de Athenas Club"
+              src={healthyPhoto}
+              alt="Nuestra Mision"
               width={600}
               height={200}
               className="rounded-lg"
@@ -65,15 +71,15 @@ export default function AboutUs() {
           <CardBody>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <Image
-                src={historyPhoto}
-                alt="Piscina olímpica"
+                src={padelCourt}
+                alt="Cancha Padel"
                 width={400}
                 height={150}
                 className="rounded-lg"
               />
               <Image
-                src={historyPhoto}
-                alt="Canchas de tenis"
+                src={partyHall}
+                alt="Salon de fiestas"
                 width={400}
                 height={150}
                 className="rounded-lg"
@@ -95,13 +101,22 @@ export default function AboutUs() {
             </h2>
           </CardHeader>
           <CardBody>
-            <Image
-              src={historyPhoto}
-              alt="Actividades en Athenas Club"
-              width={400}
-              height={200}
-              className="rounded-lg mb-4"
-            />
+            <div className="grid grid-cols-2 gap-4 mb-4">
+              <Image
+                src={yogaPhoto}
+                alt="Yoga en Athenas Club"
+                width={350}
+                height={200}
+                className="rounded-lg mb-4"
+              />
+              <Image
+                src={campPhoto}
+                alt="Actividades en Athenas Club"
+                width={350}
+                height={200}
+                className="rounded-lg mb-4"
+              />
+            </div>
             <div className="flex flex-wrap gap-2">
               {[
                 "Clases de natación",
@@ -127,7 +142,7 @@ export default function AboutUs() {
         </CardHeader>
         <CardBody className="flex flex-col md:flex-row items-center gap-4">
           <Image
-            src={historyPhoto}
+            src={athenasLogo}
             alt="Comunidad Athenas Club"
             width={300}
             height={200}
