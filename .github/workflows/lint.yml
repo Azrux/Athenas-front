@@ -24,7 +24,10 @@ jobs:
       - name: Set up Biome
         uses: biomejs/setup-biome@v2
         with:
-          version: latest
+          version: 1.8.3
+
+      - name: Verify Biome Installation
+        run: npx biome --version
 
       - name: Run Biome
         run: npx biome lint .
