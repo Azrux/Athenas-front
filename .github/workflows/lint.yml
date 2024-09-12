@@ -26,8 +26,5 @@ jobs:
         with:
           version: 1.8.3
 
-      - name: Verify Biome Installation
-        run: npx biome --version
-
       - name: Run Biome
         run: npx biome lint .
