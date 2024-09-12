@@ -1,1 +1,1 @@
-export { default as DevCard } from './dev-card';
+export { default as DevCard } from "./dev-card";

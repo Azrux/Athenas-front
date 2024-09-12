@@ -52,7 +52,10 @@ const ProductCard: FC<ProductCardProps> = ({
 				{isHovered && (
 					<div className="absolute transition-opacity inset-0 flex items-center justify-center bg-black bg-opacity-80 text-white z-10">
 						<Typography>
-							<Button color="secondary" className="hover:opacity-90">
+							<Button
+								color="secondary"
+								className="hover:opacity-90"
+							>
 								<Link to="/detail/:id">Más detalles</Link>
 							</Button>
 						</Typography>
@@ -61,7 +64,9 @@ const ProductCard: FC<ProductCardProps> = ({
 			</CardBody>
 
 			<CardFooter className="flex justify-between">
-				<Typography className="text-center font-semibold">{price}</Typography>
+				<Typography className="text-center font-semibold">
+					{price}
+				</Typography>
 				{/* TODO: Agregar lógica para el carrito */}
 				<ShoppingCartIcon
 					className="absolute bottom-3 right-3 w-6 h-6 text-green-500 hover:cursor-pointer transition-all hover:w-7 hover:h-7"
