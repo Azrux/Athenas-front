@@ -1,55 +1,35 @@
 import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
-import { InfoCardProps } from "./types";
+import { InfoCardProps } from "./types"; // Importa el tipo desde el archivo types.ts
 
-export const InfoCard: React.FC<InfoCardProps> = ({
+export default function InfoCard({
   title,
   text,
-  images,
-  list,
-  buttons,
-}) => {
+  imageSrc,
+  imageAlt,
+  imageWidth = 600,
+  imageHeight = 200,
+  imageClassName = "rounded-lg",
+  reverse = false,
+}: InfoCardProps) {
   return (
     <Card className="border-violet-300">
       <CardHeader className="bg-violet-100">
         <h2 className="text-2xl font-bold text-violet-800">{title}</h2>
       </CardHeader>
-      <CardBody>
-        {images && (
-          <div
-            className={`grid grid-cols-${
-              images.length === 2 ? 2 : 1
-            } gap-4 mb-4`}
-          >
-            {images.map((image, index) => (
-              <Image
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                width={image.width}
-                height={image.height}
-                className="rounded-lg"
-              />
-            ))}
-          </div>
-        )}
-        {text && <p className="text-black">{text}</p>}
-        {list && (
-          <ul className="list-disc list-inside text-black">
-            {list.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        )}
-        {buttons && (
-          <div className="flex flex-wrap gap-2">
-            {buttons.map((button, index) => (
-              <button key={index} className="btn bg-secondary text-white">
-                {button}
-              </button>
-            ))}
-          </div>
-        )}
+      <CardBody
+        className={`flex flex-col md:flex-row ${
+          reverse ? "md:flex-row-reverse" : ""
+        } items-center gap-4`}
+      >
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          width={imageWidth}
+          height={imageHeight}
+          className={imageClassName}
+        />
+        <p className="text-black">{text}</p>
       </CardBody>
     </Card>
   );
-};
+}
