@@ -9,7 +9,43 @@ export default {
     'node_modules/react-daisyui/dist/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#ffffff', // white
+          light: '#ffffff',
+          dark: '#fafafa',
+        },
+        secondary: {
+          DEFAULT: '#4d1ed9', // violet
+          light: '#6136dd',
+          dark: '#3b175a',
+        },
+        error: {
+          DEFAULT: '#EF4444', // red
+          light: '#FCA5A5',
+          dark: '#B91C1C',
+        },
+        success: {
+          DEFAULT: '#10B981', // green
+          light: '#6EE7B7',
+          dark: '#047857',
+        },
+        black: {
+          DEFAULT: '#000000', // black
+          light: '#333333',
+          dark: '#000000',
+        },
+        'dark-primary': '#7C3AED', // violet
+        'dark-secondary': '#FFFFFF', // white
+        'dark-error': '#B91C1C', // red
+        'dark-success': '#065F46', // green
+        'dark-black': '#000000', // black
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui(), require('daisyui')],
