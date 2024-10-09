@@ -45,7 +45,7 @@ export default function BigInfoCard({
           </ul>
         )}
         {buttons && (
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 flex-col sm:flex-row">
             {buttons.map((button, index) => (
               <Button key={index} color="secondary" variant="flat">
                 {button}

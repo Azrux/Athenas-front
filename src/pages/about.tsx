@@ -16,7 +16,7 @@ export default function AboutUs() {
     <div className="container mx-auto py-12 px-4 bg-white text-black">
       <div className="relative h-64 mb-8 rounded-lg overflow-hidden">
         <div className="absolute inset-0 bg-violet-800/70 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white">
+          <h1 className="text-3xl font-bold text-white sm:text-4xl">
             {aboutUsTexts.title}
           </h1>
         </div>
