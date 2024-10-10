@@ -29,7 +29,7 @@ export default function AboutUs() {
           imageAlt="Fundación del Athenas Club"
           imageWidth={600}
           imageHeight={200}
-          imageClassName="rounded-full"
+          imageClassName="rounded-full max-sm:w-96 max-md:w-[400px]"
         />
         <InfoCard
           title={aboutUsTexts.missionTitle}

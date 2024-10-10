@@ -24,7 +24,6 @@ export default function InfoCard({
   imageSrc,
   imageAlt,
   imageWidth = 600,
-  imageHeight = 200,
   imageClassName = "rounded-lg",
   reverse = false,
 }: InfoCardProps) {
@@ -34,15 +33,14 @@ export default function InfoCard({
         <h2 className="text-2xl font-bold text-violet-800">{title}</h2>
       </CardHeader>
       <CardBody
-        className={`flex flex-col md:flex-row ${
-          reverse ? "md:flex-row-reverse" : ""
+        className={`flex flex-col lg:flex-row ${
+          reverse ? "lg:flex-row-reverse" : ""
         } items-center gap-4`}
       >
         <Image
           src={imageSrc}
           alt={imageAlt}
           width={imageWidth}
-          height={imageHeight}
           className={imageClassName}
         />
         <p className="text-black">{text}</p>

@@ -32,7 +32,6 @@ export default function BigInfoCard({
               src={image.src}
               alt={image.alt}
               width={image.width}
-              height={image.height}
               className={image.className || "rounded-lg"}
             />
           ))}
