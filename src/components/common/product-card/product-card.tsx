@@ -1,3 +1,4 @@
+import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import {
   Button,
   Card,
@@ -7,8 +8,6 @@ import {
   Image,
 } from "@nextui-org/react";
 import { type FC, useState } from "react";
-//import { Typography } from "@common-components/typography";
-import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import type { ProductCardProps } from "./types";
 
