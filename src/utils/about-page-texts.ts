@@ -28,5 +28,3 @@ export const aboutUsTexts = {
     "Ya sea que busques mejorar tu condición física, competir en deportes o simplemente disfrutar de un ambiente social agradable, en Athenas Club tenemos algo para vos. Unite a nosotros y sé parte de una comunidad vibrante y activa.",
   membershipButton: "Conoce Más Sobre Membresías",
 };
-
-// Puedes exportar textos para otros componentes aquí también
