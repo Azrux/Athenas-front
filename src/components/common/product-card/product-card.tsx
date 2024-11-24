@@ -7,7 +7,6 @@ import {
 	Image,
 } from "@nextui-org/react";
 import { type FC, useState } from "react";
-//import { Typography } from "@common-components/typography";
 import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import type { ProductCardProps } from "./types";
@@ -38,7 +37,7 @@ const ProductCard: FC<ProductCardProps> = ({
 			</CardHeader>
 
 			<CardBody
-				className="flex items-center justify-center border-1 rounded-lg overflow-hidden"
+				className="flex items-center justify-center border-secondary border-1 rounded-lg overflow-hidden"
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => setIsHovered(false)}
 			>

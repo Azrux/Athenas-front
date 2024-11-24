@@ -25,7 +25,7 @@
 }
 
 .caption {
-  @apply text-xs text-default-400;
+  @apply text-xs text-primary;
 }
 .leaflet-container {
   height: 300px;

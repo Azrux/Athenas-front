@@ -18,13 +18,14 @@ const AboutAthenas = () => {
 			<CollapsibleSection
 				id="testimonials"
 				title="Lo que dicen nuestros miembros"
-				className="bg-gray-100"
+				className="bg-background-secondary"
 			>
 				{testimonials.map(({ title, description }) => (
 					<InfoCard
 						key={title}
 						title={title}
 						description={description}
+						cardsClassName="bg-background-primary"
 					/>
 				))}
 			</CollapsibleSection>

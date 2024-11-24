@@ -1,9 +1,9 @@
-import { Button, Input, useInput } from "@nextui-org/react";
+import { Button, Input } from "@nextui-org/react";
 
 const SignUpForm = () => {
 	// TODO: Add functionality
 	return (
-		<section id="register" className="py-12 px-2 bg-gray-100">
+		<section id="register" className="py-12 px-2 bg-background-secondary">
 			<div className="container mx-auto text-center">
 				<h2 className="text-3xl font-bold mb-6">
 					Unite a Nuestro Club

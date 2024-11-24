@@ -14,19 +14,27 @@ import type { FC } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AthenasLogo from "@assets/athenas_logo.png";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { useTheme } from "next-themes";
 
 const NavBar: FC = () => {
 	const navigate = useNavigate();
+	const { theme } = useTheme();
+	const themeColor = theme === "dark" ? "secondary" : "default";
 
 	return (
-		<Navbar isBordered isBlurred shouldHideOnScroll>
+		<Navbar
+			className="bg-background-default"
+			isBordered
+			isBlurred
+			shouldHideOnScroll
+		>
 			<NavbarContent justify="start">
 				<NavbarBrand>
 					<Image src={AthenasLogo} width={75} />
 				</NavbarBrand>
 			</NavbarContent>
 			<NavbarContent className="hidden sm:flex !justify-center gap-3">
-				<NavbarItem className="transition hover:translate-y-1">
+				<NavbarItem className="text-primary transition hover:translate-y-1">
 					<Link to="/home">Home</Link>
 				</NavbarItem>
 				<NavbarItem className="transition mr-2 hover:translate-y-1">
@@ -80,7 +88,7 @@ const NavBar: FC = () => {
 			{/* TODO: Agregar botones para el login con lógica de auth0 */}
 			<NavbarContent justify="end">
 				<NavbarItem>
-					<Button>Ingresar</Button>
+					<Button color={themeColor}>Ingresar</Button>
 				</NavbarItem>
 			</NavbarContent>
 		</Navbar>

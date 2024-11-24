@@ -1,5 +1,4 @@
 import heroImage from "@assets/carousel/futbolcrop.jpg";
-import { Typography } from "@common-components/typography";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import { AboutAthenas } from "@components/about-athenas";
@@ -7,8 +6,12 @@ import { SignUpForm } from "@components/signup-form";
 // biome-ignore lint/suspicious/noShadowRestrictedNames: This is a false positive
 import { Map } from "@components/map";
 import { EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { useTheme } from "next-themes";
 
 const LandingPage = () => {
+	const { theme } = useTheme();
+	console.log(theme);
+	const themeColor = theme === "dark" ? "secondary" : "primary";
 	return (
 		<div>
 			<section
@@ -18,24 +21,14 @@ const LandingPage = () => {
 			>
 				<div className="absolute inset-0 bg-black opacity-50" />
 				<div className="relative container mx-auto text-center text-white p-8">
-					<h1 className="text-4xl font-bold mb-4">
-						Unite al Club Athenas
-					</h1>
+					<h1 className="text-title mb-4">Unite al Club Athenas</h1>
 					<p className="text-xl mb-6">
 						Descubrí lo mejor del deporte y la comunidad.
 					</p>
-					<div className="flex items-center justify-center text-[#c0c0c0] z-10">
-						<Typography>
-							<Button
-								color="secondary"
-								className="shadow-md bg-[#471883] hover:bg-[#471883]"
-								size="lg"
-							>
-								<Link to="/home">
-									Hacé click para saber más
-								</Link>
-							</Button>
-						</Typography>
+					<div className="flex items-center justify-center z-10">
+						<Button color={themeColor} size="lg">
+							<Link to="/home">Hacé click para saber más</Link>
+						</Button>
 					</div>
 				</div>
 			</section>

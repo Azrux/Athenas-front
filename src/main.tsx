@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import "./main.css";
 import React from "react";
 import Layout from "@components/layout/index.tsx";
+import { ThemeProvider } from "next-themes";
 
 const root = document.getElementById("root");
 
@@ -14,9 +15,11 @@ ReactDOM.createRoot(root).render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<NextUIProvider>
-				<Layout className="light text-foreground bg-background h-full w-full">
-					<App />
-				</Layout>
+				<ThemeProvider defaultTheme="light">
+					<Layout className="text-foreground bg-background-primary h-full w-full">
+						<App />
+					</Layout>
+				</ThemeProvider>
 			</NextUIProvider>
 		</BrowserRouter>
 	</React.StrictMode>,
