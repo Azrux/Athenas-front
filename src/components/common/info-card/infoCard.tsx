@@ -1,5 +1,5 @@
 import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
-import { InfoCardProps } from "./types";
+import type { InfoCardProps } from "./types";
 
 /**
  * InfoCard component that displays a card with a header, an image, and text content.
@@ -19,32 +19,32 @@ import { InfoCardProps } from "./types";
  */
 
 export default function InfoCard({
-  title,
-  text,
-  imageSrc,
-  imageAlt,
-  imageWidth = 600,
-  imageClassName = "rounded-lg",
-  reverse = false,
+	title,
+	text,
+	imageSrc,
+	imageAlt,
+	imageWidth = 600,
+	imageClassName = "rounded-lg",
+	reverse = false,
 }: InfoCardProps) {
-  return (
-    <Card className="border-violet-300">
-      <CardHeader className="bg-violet-100">
-        <h2 className="text-2xl font-bold text-violet-800">{title}</h2>
-      </CardHeader>
-      <CardBody
-        className={`flex flex-col lg:flex-row ${
-          reverse ? "lg:flex-row-reverse" : ""
-        } items-center gap-4`}
-      >
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={imageWidth}
-          className={imageClassName}
-        />
-        <p className="text-black">{text}</p>
-      </CardBody>
-    </Card>
-  );
+	return (
+		<Card className="border-violet-300">
+			<CardHeader className="bg-violet-100">
+				<h2 className="text-2xl font-bold text-violet-800">{title}</h2>
+			</CardHeader>
+			<CardBody
+				className={`flex flex-col lg:flex-row ${
+					reverse ? "lg:flex-row-reverse" : ""
+				} items-center gap-4 bg-violet-100`}
+			>
+				<Image
+					src={imageSrc}
+					alt={imageAlt}
+					width={imageWidth}
+					className={imageClassName}
+				/>
+				<p className="text-black">{text}</p>
+			</CardBody>
+		</Card>
+	);
 }

@@ -1,5 +1,5 @@
 import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
-import { BigInfoCardProps } from "./types";
+import type { BigInfoCardProps } from "./types";
 
 /**
  * BigInfoCard component that displays a card with a header, a set of images, an optional list, and buttons.
@@ -14,45 +14,49 @@ import { BigInfoCardProps } from "./types";
  */
 
 export default function BigInfoCard({
-  title,
-  images,
-  listItems,
-  buttons,
+	title,
+	images,
+	listItems,
+	buttons,
 }: BigInfoCardProps) {
-  return (
-    <Card className="border-violet-300">
-      <CardHeader className="bg-violet-100">
-        <h2 className="text-2xl font-bold text-violet-800">{title}</h2>
-      </CardHeader>
-      <CardBody>
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          {images.map((image, index) => (
-            <Image
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              width={image.width}
-              className={image.className || "rounded-lg"}
-            />
-          ))}
-        </div>
-        {listItems && (
-          <ul className="list-disc list-inside text-black">
-            {listItems.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        )}
-        {buttons && (
-          <div className="flex flex-wrap gap-2 flex-col sm:flex-row">
-            {buttons.map((button, index) => (
-              <Button key={index} color="secondary" variant="flat">
-                {button}
-              </Button>
-            ))}
-          </div>
-        )}
-      </CardBody>
-    </Card>
-  );
+	return (
+		<Card className="border-violet-300 bg-violet-100">
+			<CardHeader className="bg-violet-100">
+				<h2 className="text-2xl font-bold text-violet-800">{title}</h2>
+			</CardHeader>
+			<CardBody>
+				<div className="grid grid-cols-2 gap-4 mb-4 bg-violet-100">
+					{images.map((image, index) => (
+						<Image
+							key={`img-${index + 1}`}
+							src={image.src}
+							alt={image.alt}
+							width={image.width}
+							className={image.className || "rounded-lg"}
+						/>
+					))}
+				</div>
+				{listItems && (
+					<ul className="list-disc list-inside text-black">
+						{listItems.map((item, index) => (
+							<li key={`items-${index + 1}`}>{item}</li>
+						))}
+					</ul>
+				)}
+				{buttons && (
+					<div className="flex flex-wrap gap-2 flex-col sm:flex-row">
+						{buttons.map((button, index) => (
+							<Button
+								key={`button-${index + 1}`}
+								color="secondary"
+								variant="flat"
+							>
+								{button}
+							</Button>
+						))}
+					</div>
+				)}
+			</CardBody>
+		</Card>
+	);
 }
