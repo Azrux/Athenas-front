@@ -1,13 +1,12 @@
 import {
+	Button,
 	Card,
-	CardHeader,
 	CardBody,
 	CardFooter,
+	CardHeader,
 	Image,
-	Button,
 } from "@nextui-org/react";
 import { type FC, useState } from "react";
-import { Typography } from "@common-components/typography";
 import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import type { ProductCardProps } from "./types";
@@ -33,12 +32,12 @@ const ProductCard: FC<ProductCardProps> = ({
 			{...props}
 		>
 			<CardHeader className="block">
-				<Typography type="title">{title}</Typography>
-				<Typography type="caption">{description}</Typography>
+				<div className="title">{title}</div>
+				<div className="caption">{description}</div>
 			</CardHeader>
 
 			<CardBody
-				className="flex items-center justify-center border-1 rounded-lg overflow-hidden"
+				className="flex items-center justify-center border-secondary border-1 rounded-lg overflow-hidden"
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => setIsHovered(false)}
 			>
@@ -51,22 +50,20 @@ const ProductCard: FC<ProductCardProps> = ({
 				<Image className="object-cover" src={image} width={200} />
 				{isHovered && (
 					<div className="absolute transition-opacity inset-0 flex items-center justify-center bg-black bg-opacity-80 text-white z-10">
-						<Typography>
+						<div>
 							<Button
 								color="secondary"
 								className="hover:opacity-90"
 							>
 								<Link to="/detail/:id">Más detalles</Link>
 							</Button>
-						</Typography>
+						</div>
 					</div>
 				)}
 			</CardBody>
 
 			<CardFooter className="flex justify-between">
-				<Typography className="text-center font-semibold">
-					{price}
-				</Typography>
+				<div className="text-center font-semibold">{price}</div>
 				{/* TODO: Agregar lógica para el carrito */}
 				<ShoppingCartIcon
 					className="absolute bottom-3 right-3 w-6 h-6 text-green-500 hover:cursor-pointer transition-all hover:w-7 hover:h-7"

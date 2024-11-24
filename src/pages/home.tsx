@@ -1,18 +1,22 @@
-import Carousel from "@components/carousel";
 import basketPhoto from "@assets/carousel/basquetcrop.jpg";
 import footballPhoto from "@assets/carousel/futbolcrop.jpg";
 import peoplePhoto from "@assets/carousel/gentecrop.jpg";
-import products from "@utils/products.json";
 import { ProductCard } from "@common-components/product-card";
+import Carousel from "@components/carousel";
+import products from "@utils/products.json";
+import { useTheme } from "next-themes";
 
 const Home = () => {
+	const { theme } = useTheme();
+	const themeColor = theme === "dark" ? "text-secondary" : "text-primary";
+
 	return (
-		<div className="w-full p-3">
+		<div className="w-full pb-3">
 			<div className="text-center">
-				<h1 className="text-4xl font-bold text-secondary mb-4">
+				<h1 className={`${themeColor} text-4xl font-bold my-4`}>
 					¡Bienvenido a Athenas Club!
 				</h1>
-				<p className="text-lg text-gray-700 mb-6">
+				<p className="text-lg text-primary mb-6">
 					Tu tienda online de productos del Club Athenas
 				</p>
 			</div>
@@ -21,7 +25,7 @@ const Home = () => {
 				classNameContainer="max-w-[1200px] mx-auto"
 			/>
 			<div className="mt-8">
-				<h2 className="text-2xl font-semibold text-secondary mb-4">
+				<h2 className={`${themeColor} text-2xl font-semibold mb-4`}>
 					Destacados
 				</h2>
 				<div className="flex flex-col md:flex-row items-center gap-10">
@@ -41,7 +45,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="mt-8">
-				<h2 className="text-2xl font-semibold text-secondary mb-4">
+				<h2 className={`${themeColor} text-2xl font-semibold mb-4`}>
 					Novedades
 				</h2>
 				<div className="flex flex-col md:flex-row items-center gap-10">
