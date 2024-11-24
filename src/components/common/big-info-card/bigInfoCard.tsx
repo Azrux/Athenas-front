@@ -1,5 +1,6 @@
 import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import type { BigInfoCardProps } from "./types";
+import { useTheme } from "next-themes";
 
 /**
  * BigInfoCard component that displays a card with a header, a set of images, an optional list, and buttons.
@@ -19,6 +20,9 @@ export default function BigInfoCard({
 	listItems,
 	buttons,
 }: BigInfoCardProps) {
+	const { theme } = useTheme();
+	const buttonTextColor =
+		theme === "dark" ? "text-secondary" : "text-primary";
 	return (
 		<Card className="border-violet-300 bg-violet-100">
 			<CardHeader className="bg-violet-100">
@@ -48,8 +52,11 @@ export default function BigInfoCard({
 						{buttons.map((button, index) => (
 							<Button
 								key={`button-${index + 1}`}
-								color="secondary"
+								color={
+									theme === "dark" ? "secondary" : "primary"
+								}
 								variant="flat"
+								className={buttonTextColor}
 							>
 								{button}
 							</Button>
