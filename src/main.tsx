@@ -9,7 +9,7 @@ import Layout from "@components/layout/index.tsx";
 const root = document.getElementById("root");
 
 if (!root) throw new Error("Root element not found");
-
+// testing action
 ReactDOM.createRoot(root).render(
 	<React.StrictMode>
 		<BrowserRouter>
