@@ -27,3 +27,15 @@
 .caption {
   @apply text-xs text-default-400;
 }
+.leaflet-container {
+  height: 300px;
+  width: 300px;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .leaflet-container {
+    height: 500px;
+    width: 500px;
+  }
+}
